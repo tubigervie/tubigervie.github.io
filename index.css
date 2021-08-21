@@ -505,7 +505,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .trouble_image,
-.revival_image,
 .villager_image,
 .scarlet_image{
 	display: none;

@@ -1,16 +1,330 @@
-﻿<!DOCTYPE html>
+<!-- 
+  Hello 😊.
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/jpg" href="./images/frog.jpg" />
 
-    <title>
-    Ervie Tubig | Gameplay Programmer
-    </title>
+  <!-- Put your site title here -->
+  <title>
+    Ervie Tubig | Gameplay Programmer and Game Dev Tools Engineer
+  </title>
+
+  <meta name="description" content="Game Developer specializing in Gameplay and Tools.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Ervie Tubig GameDev Game Developer Tools Engineer" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-<h1>Hello World</h1>
-<p> I'm hosted with GitHub Pages.</p>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Ervie Tubig</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Game Programmer: Gameplay and Tools</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Scarlet</h3>
+              <p>
+                <b class=thicker>Scarlet</b> is a <b class=thicker>3D Hack-and-Slash</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> You play as an elementalist who uses the forces of nature to fight against an evil god. 
+                This was a solo, personal project inspired by other games of the genre like Kingdom Hearts and Devil May Cry. It features:
+
+              </p>
+              <ul class="work__list">
+                <li>A physics-based movement system with wall-running and flight.</li>
+                <li>An extensive combat system blending seamlessly between over 40 different animations.</li>
+                <li>Robustly data-driven using scriptable objects to effortlessly control combat action data such as knockback/knockup power, AI action conditions, visual effect/audio data, and etc.</li>
+                <li>An easy-to-use cutscene creation system.</li>
+              </ul>
+
+              <!--<div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  See code <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div> -->
+            </div>
+            <div class="work__image-box">
+              <video class="scarlet_image" alt="Scarlet video trailer." width="960" height="720" controls>
+                <source src="images/scarlettrailer.webm" type="video/webm">
+              </video>
+              <!--<video class="scarlet_image" alt="Scarlet gameplay." width="960" height="720" controls>
+                <source src="images/yes.mp4" type="video/mp4">
+              </video>-->
+              <img src="./images/scarlethitdata.jpg" class="scarlet_image" alt="Scarlet Data" />
+              <a class="image_prev" onclick="advance_engine_slide_image('scarlet_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('scarlet_image', 1)">&gt;</a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Villager</h3>
+              <p>
+                <b class=thicker>Villager</b> is a <b class=thicker>3D Action RPG</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> This is another personal project that takes inspiration from other games
+                of the genre such as Diablo and Torchlight. It features:
+              </p>
+              <ul class="work__list">
+                <li>Scalable leveling/stat progression system using scriptable objects.</li>
+                <li>Item/loot generation using percent chance determined stat modifiers and rarities.</li>
+                <li>UI systems such as tooltip instantiation and drag & drop icons</li>
+                <li>An efficient and easy to use dialogue editor tool to create and edit large amounts of branching dialogue trees.</li>
+                <li>An elegant save/load system using binary formatting for serialization.</li>
+              </ul>
+
+              <!--<div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>-->
+            </div>
+            <div class="work__image-box">
+            <img src="./images/villagergameplay.jpg" class="villager_image" alt="Villager Gameplay" />
+            <img src="./images/villagerui.jpg" class="villager_image" alt="Villager UI" />
+              <img src="./images/dialoguesystem.jpg" class="villager_image" alt="Villager Dialogue Editor" />
+              <a class="image_prev" onclick="advance_engine_slide_image('villager_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('villager_image', 1)">&gt;</a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Revival</h3>
+              <p>
+                <b class=thicker>Revival</b> is a <b class=thicker>2D Puzzle Platformer</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> you take control of a girl who has the ability to control the elements of the seasons to traverse the levels and restore the seasons upon the Earth.
+                I worked on this with a team of 4 as our final project for our Game Engine class. My role was primarily <b class="thicker">engineer</b> and I made: 
+              </p>
+              <ul class="work__list">
+                <li>Custom physics system for the character controller, handling movement on slopes, moving platforms, and collision detection using raycasts</li>
+                <li>Core game features such as a bounding box camera system, background parallax, and scene/game management</li>
+                <li>An efficient pixel sprite outline shader</li>
+              </ul>
+
+              <!--<div class="work__links">
+                <a href="#" class="link__text">
+                  Check out game <span>&rarr;</span>
+                </a>
+                <a href="https://tubigervie.itch.io/revival">
+                  <img src="./images/large.png" class="work__code" title="View Game" alt="itch.io">
+                </a>
+              </div>-->
+            </div>
+            <div class="work__image-box">
+            <video class="revival_image" alt="Revival gameplay." width="960" height="720" controls>
+                <source src="images/revival.mp4" type="video/mp4">
+              </video>
+              <img src="./images/revivalgame.png" class="revival_image" alt="Project 3" />
+              <a class="image_prev" onclick="advance_engine_slide_image('revival_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('revival_image', 1)">&gt;</a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Trouble Brewing</h3>
+              <p>
+                <b class=thicker>Trouble Brewing</b> is a <b class=thicker>3D Isometric Adventure game</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> You take control of a frog familiar who must brew a potion to prevent a malevolent cauldron from boiling over and burning down the whole forest.
+                <br></br>
+                <br>This was a submission for the LCAD Hot Jam 2021 in which it placed 3rd and was awarded Best in Programming. My role was the lead <b class="thicker">engineer</b> and I was responsible for: 
+              </br>
+                <ul class="work__list">
+                <li>Planned and implemented the overall game architecture for event handling and scene management</li>
+                <li>Developed core gameplay systems such as puzzles, alchemy crafting, cauldron AI and dialogue</li>
+                <li>Introduced a code review system to encourage better communication and code consistency.</li>
+              </ul>
+
+              <!--<div class="work__links">
+                <a href="#" class="link__text">
+                  Check out game <span>&rarr;</span>
+                </a>
+                <a href="https://tubigervie.itch.io/revival">
+                  <img src="./images/large.png" class="work__code" title="View Game" alt="itch.io">
+                </a>
+              </div>-->
+            </div>
+            <div class="work__image-box">
+              <img src="./images/basil.jpg" class="trouble_image" alt="Project 4" />
+              <img src="./images/recipe.jpg" class="trouble_image" alt="Project 4" />
+              <a class="image_prev" onclick="advance_engine_slide_image('trouble_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('trouble_image', 1)">&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+    <!--
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with.  
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hi! I'm Ervie Tubig (he/him) and I like making video games! My expertise
+              lies within gameplay, tools, and engine backend but I like to push myself
+              in experiencing almost every aspect of game development. It's my greatest
+              passion and I love learning and trying new things within it to broaden my horizons!
+              I'm always excited to understand whatever I'm not familiar with in order to reach 
+              better and more elegant solutions to problems!
+              <br></br>
+              I have recently graduated in June 2021 with a Bachelor of Science in 
+              Computer Science at UC Irvine.
+              <br></br>
+              I like to play RPGs of all sorts (the Persona series has my whole heart). I also like playing my bass, going out to concerts,
+              3D art and animation, and pretending I know how to rollerskate.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./Ervie_Tubig_Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/erv.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__info">
+        <p>
+          Looking for an engineer for your game development team? The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:ervie.tubig@gmail.com" class="btn">ervie.tubig@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/ervieh2o/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/tubigervie/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://itch.io/profile/tubigervie" title="Link to itch.io">
+            <img src="./images/large.png" class="footer__social-image" alt="itchio">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/tubig-ervie/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>

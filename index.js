@@ -66,3 +66,4 @@ function advance_engine_slide_image(class_name, by) {
 show_slide_image("scarlet_image", 0, 0);
 show_slide_image("villager_image", 0, 0);
 show_slide_image("trouble_image", 0, 0);
+show_slide_image("revival_image", 0, 0);

@@ -75,30 +75,90 @@
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Cowboy Frog</h3>
+              <p>
+                <b class=thicker>Cowboy Frog</b> is a <b class=thicker>2D Roguelike</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> You take control of a cowboy frog battling through an evil dungeon of demons with holy water-infused squirt guns.
+                This was a personal project inspired by games of the genre I love like 'Enter the Gungeon' and 'Binding of Isaac'. It features:
+              </p>
+              <ul class="work__list">
+                <li>A node editor tool to build intricate dungeon level layouts to be used by a procedural random dungeon generator</li>
+                <li>An optimized min-heap realtime A* pathfinding algorithm for enemy AI</li>
+                <li>A range of weapons/ammo patterns with different sound effects and visual effects making use of object pooling for efficient reuse.</li>
+                <li>2D lighting and shaders using Unity's Universal Render Pipeline</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://tubigervie.itch.io/cowboy-frog?secret=RDNQPXWX5xS6uJDLAAdbNnNkGjU" class="link__text">
+                  Check out game <span>&rarr;</span>
+                </a>
+              </div>
+              <div class="work__links">
+                <a href="https://github.com/tubigervie/Cowboy-Frog" class="link__text">
+                  View source code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/frog2.png" class="revival_image" alt="Project 3" />
+              <img src="./images/frog1.png" class="revival_image" alt="Project 3" />
+              <img src="./images/frog3.png" class="revival_image" alt="Project 3" />
+              <img src="./images/frog4.png" class="revival_image" alt="Project 3" />
+              <a class="image_prev" onclick="advance_engine_slide_image('revival_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('revival_image', 1)">&gt;</a>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Villager</h3>
+              <p>
+                <b class=thicker>Villager</b> is a <b class=thicker>3D Action RPG</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> This is another personal project that takes inspiration from Diablo. It features:
+              </p>
+              <ul class="work__list">
+                <li>Scalable leveling/stat progression system using scriptable objects.</li>
+                <li>Item/loot generation using percent chance determined stat modifiers and rarities.</li>
+                <li>UI systems such as tooltip instantiation and drag & drop icons</li>
+                <li>An efficient and easy to use dialogue editor tool to create and edit large amounts of branching dialogue trees.</li>
+                <li>An elegant save/load system using binary formatting for serialization.</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/tubigervie/Diablo-esque/tree/master/Test%20Anime/Assets/Scripts" class="link__text">
+                  View source code <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+            <img src="./images/villagergameplay.JPG" class="villager_image" alt="Villager Gameplay" />
+            <img src="./images/villagerui.JPG" class="villager_image" alt="Villager UI" />
+              <img src="./images/dialoguesystem.JPG" class="villager_image" alt="Villager Dialogue Editor" />
+              <a class="image_prev" onclick="advance_engine_slide_image('villager_image', -1)">&lt;</a>
+              <a class="image_next" onclick="advance_engine_slide_image('villager_image', 1)">&gt;</a>
+            </div>
+          </div>
 
           <div class="work__box">
             <div class="work__text">
               <h3>Scarlet</h3>
               <p>
                 <b class=thicker>Scarlet</b> is a <b class=thicker>3D Hack-and-Slash</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> You play as an elementalist who uses the forces of nature to fight against an evil god. 
-                This was a solo, personal project inspired by other games of the genre like Kingdom Hearts and Devil May Cry. It features:
+                This was another solo project inspired by other games of the genre like 'Kingdom Hearts' and 'Devil May Cry'. It features:
 
               </p>
               <ul class="work__list">
                 <li>A physics-based movement system with wall-running and flight.</li>
                 <li>An extensive combat system blending seamlessly between over 40 different animations.</li>
                 <li>Robustly data-driven using scriptable objects to effortlessly control combat action data such as knockback/knockup power, AI action conditions, visual effect/audio data, and etc.</li>
-                <li>An easy-to-use cutscene creation system.</li>
+                <li>A custom easy-to-use cutscene creation system.</li>
               </ul>
 
-              <!--<div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  See code <span>&rarr;</span>
+              <div class="work__links">
+                <a href="https://github.com/tubigervie/Scarlet-Unity/tree/master/Assets/Scripts" target="_blank" class="link__text">
+                  View source code <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div> -->
+              </div> 
             </div>
             <div class="work__image-box">
               <video class="scarlet_image" alt="Scarlet video trailer." width="960" height="720" controls>
@@ -115,71 +175,6 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Villager</h3>
-              <p>
-                <b class=thicker>Villager</b> is a <b class=thicker>3D Action RPG</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> This is another personal project that takes inspiration from other games
-                of the genre such as Diablo and Torchlight. It features:
-              </p>
-              <ul class="work__list">
-                <li>Scalable leveling/stat progression system using scriptable objects.</li>
-                <li>Item/loot generation using percent chance determined stat modifiers and rarities.</li>
-                <li>UI systems such as tooltip instantiation and drag & drop icons</li>
-                <li>An efficient and easy to use dialogue editor tool to create and edit large amounts of branching dialogue trees.</li>
-                <li>An elegant save/load system using binary formatting for serialization.</li>
-              </ul>
-
-              <!--<div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>-->
-            </div>
-            <div class="work__image-box">
-            <img src="./images/villagergameplay.JPG" class="villager_image" alt="Villager Gameplay" />
-            <img src="./images/villagerui.JPG" class="villager_image" alt="Villager UI" />
-              <img src="./images/dialoguesystem.JPG" class="villager_image" alt="Villager Dialogue Editor" />
-              <a class="image_prev" onclick="advance_engine_slide_image('villager_image', -1)">&lt;</a>
-              <a class="image_next" onclick="advance_engine_slide_image('villager_image', 1)">&gt;</a>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Revival</h3>
-              <p>
-                <b class=thicker>Revival</b> is a <b class=thicker>2D Puzzle Platformer</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> you take control of a girl who has the ability to control the elements of the seasons to traverse the levels and restore the seasons upon the Earth.
-                I worked on this with a team of 4 as our final project for our Game Engine class. My role was primarily <b class="thicker">engineer</b> and I made: 
-              </p>
-              <ul class="work__list">
-                <li>Custom physics system for the character controller, handling movement on slopes, moving platforms, and collision detection using raycasts</li>
-                <li>Core game features such as a bounding box camera system, background parallax, and scene/game management</li>
-                <li>An efficient pixel sprite outline shader</li>
-              </ul>
-
-              <!--<div class="work__links">
-                <a href="#" class="link__text">
-                  Check out game <span>&rarr;</span>
-                </a>
-                <a href="https://tubigervie.itch.io/revival">
-                  <img src="./images/large.png" class="work__code" title="View Game" alt="itch.io">
-                </a>
-              </div>-->
-            </div>
-            <div class="work__image-box">
-            <!--<video class="revival_image" alt="Revival gameplay." width="960" height="720" controls>
-                <source src="images/revival.mp4" type="video/mp4">
-              </video>-->
-              <img src="images/revivalgame.png" class="revival_image" alt="Project 3" />
-              <!--<a class="image_prev" onclick="advance_engine_slide_image('revival_image', -1)">&lt;</a>
-              <a class="image_next" onclick="advance_engine_slide_image('revival_image', 1)">&gt;</a>-->
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
               <h3>Trouble Brewing</h3>
               <p>
                 <b class=thicker>Trouble Brewing</b> is a <b class=thicker>3D Isometric Adventure game</b> made with <b class="thicker">Unity</b> and <b class="thicker">C#.</b> You take control of a frog familiar who must brew a potion to prevent a malevolent cauldron from boiling over and burning down the whole forest.
@@ -191,14 +186,16 @@
                 <li>Developed core gameplay systems such as puzzles, alchemy crafting, cauldron AI and dialogue</li>
               </ul>
 
-              <!--<div class="work__links">
-                <a href="#" class="link__text">
-                  Check out game <span>&rarr;</span>
+              <div class="work__links">
+                <a href="https://tubigervie.itch.io/trouble-brewing" class="link__text">
+                  Check out the game! <span>&rarr;</span>
                 </a>
-                <a href="https://tubigervie.itch.io/revival">
-                  <img src="./images/large.png" class="work__code" title="View Game" alt="itch.io">
+              </div>
+              <div class="work__links">
+                <a href="https://github.com/tubigervie/Hot-Jam-2021/tree/main/Hot-Jam-2021-Unity-Project" class="link__text">
+                  View source code <span>&rarr;</span>
                 </a>
-              </div>-->
+              </div>
             </div>
             <div class="work__image-box">
               <img src="./images/basil.jpg" class="trouble_image" alt="Project 4" />
@@ -252,18 +249,18 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Hi! I'm Ervie Tubig (he/him) and I'm a game developer in Southern California! My expertise
-              lies within gameplay, tools, and engine backend but I like to push myself
+              Hi! I'm Ervie Tubig (he/him) and I'm a game developer based in Pennsylvania. My expertise
+              lies within gameplay and tools programming but I like to push myself
               in experiencing almost every aspect of game development. It's my greatest
-              passion and I love learning and trying new things within it to broaden my horizons!
+              passion and I love learning and trying new things within it to broaden my horizons.
               I'm always excited to understand whatever I'm not familiar with in order to reach 
               better and more elegant solutions to problems!
               <br></br>
-              I have recently graduated in June 2021 with a Bachelor of Science in 
+              I graduated in June 2021 with a Bachelor of Science in 
               Computer Science at UC Irvine.
               <br></br>
-              I like to play RPGs of all sorts (the Persona series has my whole heart). I also like playing my bass, going out to concerts,
-              3D art and animation, and pretending I know how to rollerskate.
+              My favorite game series is the Shin Megami Tensei: Persona and I'm currently playing a ton of FF14! Thanks for checking out my page! Feel free to contact
+              me regarding any work opportunities. Cheers!
             </p>
             <!-- Provide a link to your resume -->
             <a href="./resume.pdf" class="btn">My Resume</a>
@@ -271,7 +268,7 @@
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/erv.png" alt="" />
+            <img class="about__photo" src="./images/erv.jpg" alt="" />
           </div>
         </div>
       </div>

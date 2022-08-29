@@ -504,6 +504,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.revival_image,
 .trouble_image,
 .villager_image,
 .scarlet_image{
